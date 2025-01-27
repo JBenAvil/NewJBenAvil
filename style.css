@@ -1,0 +1,359 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+/* STYLE NAV */
+  
+.nav-link {
+    color: white;
+    font-weight: 400;
+}
+  
+.nav-link:hover {
+    color: #00AFFE;
+    scale: 1.1;
+}
+
+/* STYLE BODY */
+
+body{
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 700;
+    margin: 0;
+}
+
+.body_section{
+    padding : 3% 5% 1%;
+}
+
+  h1{
+      font-family: "Lovely Home";
+      font-size: 50px;
+      font-weight: bold;
+      color: black;
+  }
+
+  .Heading{
+    text-align: center;
+  }
+  
+  /* STYLE LINE OF WORK FOR FASE */
+
+  .timeline{
+    margin-top:20px;
+    position:relative; 
+  }
+  
+  .timeline:before{
+    position:absolute;
+    content:'';
+    width:4px;
+    height:calc(100% - 150px);
+    background: gray;
+    left:14px;
+    top:5px;
+    border-radius:4px;
+  }
+  
+  .timeline-month{
+    color:white;
+    position:relative;
+    padding:4px 15px 4px 35px;
+    background-color:gray;
+    display:inline-block;
+    width:auto;
+    border-radius:40px;
+    border:1px solid gray;
+    border-right-color:gray;
+    margin-bottom:30px;
+  }
+  
+  .timeline-month span{
+    position:absolute;
+    top:-1px;
+    left:calc(100% - 10px);
+    z-index:-1;
+    white-space:nowrap;
+    display:inline-block;
+    background-color:#111;
+    padding:4px 10px 4px 20px;
+    border-top-right-radius:40px;
+    border-bottom-right-radius:40px;
+    border:1px solid black;
+    box-sizing:border-box;
+  }
+  
+  .timeline-month:before{
+    position:absolute;
+    content:'';
+    width:20px;
+    height:20px;
+    background: gray;
+    border-radius:100%;
+    border:1px solid #17191B;
+    left:5px;
+  }
+  
+  .timeline-section{
+    padding-left:35px;
+    display:block;
+    position:relative;
+    margin-bottom:30px;
+  }
+  
+  .timeline-date{
+    margin-bottom:15px;
+    padding:2px 15px;
+    background:gray;
+    position:relative;
+    display:inline-block;
+    border-radius:20px;
+    border:1px solid gray;
+    color:white;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+  }
+
+  .timeline-section:before{
+    content:'';
+    position:absolute;
+    width:30px;
+    height:1px;
+    background-color: gray;
+    top:12px;
+    left:20px;
+  }
+  
+  .timeline-section:after{
+    content:'';
+    position:absolute;
+    width:10px;
+    height:10px;
+    background: gray;
+    top:7px;
+    left:11px;
+    border:1px solid #17191B;
+    border-radius:100%;
+  } 
+  
+  .timeline-box{
+    position:relative;
+    color:black;
+    background-color:#2DB5F5;
+    border-radius:15px;
+    border-top-left-radius:0px;
+    border-bottom-right-radius:0px;
+    border:1px solid #17191B;
+    transition:all 0.3s ease;
+    overflow:hidden;
+  }
+  
+  .box-icon .material-symbols-outlined{
+    position:absolute;
+    right:5px;
+    top:0px;
+  }
+  
+  .box-title{
+    padding:10px 15px;
+    font-size: 25px;
+    border-bottom: 5px solid #17191B;
+  }
+ 
+  
+  .box-title i{
+    margin-right:5px;
+  }
+  
+  .box-content{
+    padding:5px 15px;
+    background-color: white;
+  }
+  
+  .box-item{
+    margin-bottom:5px;
+    color:#868e96;
+    font-weight: 400;
+  }
+
+  /* btn whatsapp */
+
+  .btn-whatsapp {
+    text-align: center;
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #128C7E;
+  }
+
+  .card-body {
+    background-color:  rgb(53, 54, 56);
+    color: grey;
+    border: 4px solid gray;
+    border-radius: 6px;
+  }
+
+  .card-body:hover {
+    background-color:  #001532;
+    color: white;
+    border: 4px solid #2DB5F5;
+  }
+
+  .btn-ver-mas {
+    text-align: center;
+    display: inline-block;
+    background-color: #2DB5F5;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn-ver-mas:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .footer {
+    position: relative;
+    text-align: center;
+  }
+  
+  .profile-image {
+    text-align: center;
+    width: 200px;
+    height: auto;
+    animation: bounce 1s infinite alternate;
+  }
+
+  .img_media {
+    block-size: 32px;
+    inline-size: 32px;
+  }
+  
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+  
+    to {
+      transform: translateY(-10px);
+    }
+  }
+
+  .btn-escritores {
+    text-align: center;
+    display: inline-block;
+    background-color: #008afc;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn-escritores:hover {
+    background-color: #6cc9ff;
+    color: #ffffff;
+  }
+
+  .autor-button {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: #008afc;
+    color: #111;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #666666;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  .autor-button:hover {
+    background-color: #6cc9ff;
+    color: #ffffff;
+  }
+  .autor-button i {
+    margin-right: 10px;
+  }
+
+  .amazon-button {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffa41c;
+    color: #111;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #c77909;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  .amazon-button:hover {
+    background-color: #e89300;
+    color: #ffffff;
+  }
+  .amazon-button i {
+    margin-right: 10px;
+  }
+  
+  .social-links {
+    display: flex; /* Coloca los elementos en línea horizontal */
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    gap: 10px; /* Espaciado de 10px entre los elementos */
+  }
+  .social-links a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+  }
+  .social-links img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s; /* Añade una animación al pasar el cursor */
+  }
+  .social-links img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+  }
+
+  
+
+
+  
+  
+  
+  
+
+  
+  
+ 
+  
+
+  
+ 
+  
+ 

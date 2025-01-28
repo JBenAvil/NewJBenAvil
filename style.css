@@ -3,6 +3,45 @@ html {
     width: 100%;
   }
 
+  @media (max-width: 1200px) {
+    html {
+      font-size: 90%;
+    }
+  }
+  
+  @media (max-width: 645px) {
+    html {
+      font-size: 80%;
+    }
+  }
+
+  /* Improve media defaults */
+
+  picture,
+  svg,
+  img {  
+    max-inline-size: 100%;
+    object-fit: contain;
+  }
+
+  .header-text {
+    font-size: var(--text-large);
+    font-weight: 400;
+    margin-block-start: var(--gutter-micro);
+    margin-block-end: var(--gutter-medium);
+  }
+  
+  @media (max-width: 1200px) {
+    .header-text {
+      max-inline-size: 685px;
+    }
+  }
+  
+  @media (max-width: 845px) {
+    .header-text {
+      max-inline-size: 585px;
+    }
+  }
 /* STYLE NAV */
   
 .nav-link {

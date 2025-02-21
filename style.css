@@ -271,8 +271,7 @@ body{
   }
 
   .card-body-plan:hover {
-    background-color: rgb(53, 54, 56);
-    color:#2DB5F5;
+    background-color: black;
     border: 4px solid #FF6E17;
   }
 

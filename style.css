@@ -263,6 +263,19 @@ body{
     border: 4px solid #2DB5F5;
   }
 
+  .card-body-plan {
+    background-color: #001532;
+    color: white;
+    border: 4px solid #2DB5F5;
+    border-radius: 6px;
+  }
+
+  .card-body-plan:hover {
+    background-color: rgb(53, 54, 56);
+    color:#2DB5F5;
+    border: 4px solid #FF6E17;
+  }
+
   .btn-ver-mas {
     text-align: center;
     display: inline-block;

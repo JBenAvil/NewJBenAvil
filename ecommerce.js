@@ -1,5 +1,5 @@
 // Cargar el JSON y mostrar los productos
-fetch('public/products.json')
+fetch('products.json')
   .then(response => response.json())
   .then(data => {
     const productList = document.getElementById('product-list');

@@ -237,7 +237,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const productId = parseInt(urlParams.get('id'));
 
-        fetch('public/products.json')
+        fetch('products.json')
             .then(response => response.json())
             .then(data => {
                 const product = data.find(p => p.id === productId);

@@ -26,3 +26,4 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
 // Insertar el enlace en el botón
 document.getElementById("whatsapp-btn").href = whatsappLink;
 
+

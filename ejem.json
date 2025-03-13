@@ -1,0 +1,82 @@
+[
+{
+    "id": 6,
+    "name": "",
+    "price": 9990,
+    "image":"",
+    "details": {
+      "description": "",
+      "price": 9990,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "mercadoLibreLink": ""
+    }
+  },
+  {
+    "id": 7,
+    "name": "",
+    "price": 9990,
+    "image":"",
+    "details": {
+      "description": "",
+      "price": 9990,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "mercadoLibreLink": ""
+    }
+  },
+  {
+    "id": 8,
+    "name": "",
+    "price": 9990,
+    "image":"",
+    "details": {
+      "description": "",
+      "price": 9990,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "mercadoLibreLink": ""
+    }
+  },
+  {
+    "id": 9,
+    "name": "",
+    "price": 9990,
+    "image":"",
+    "details": {
+      "description": "",
+      "price": 9990,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "mercadoLibreLink": ""
+    }  
+  },
+  {
+    "id": 10,
+    "name": "",
+    "price": 9990,
+    "image":"",
+    "details": {
+      "description": "",
+      "price": 9990,
+      "images": [
+        "",
+        "",
+        ""
+      ],
+      "mercadoLibreLink": ""
+    }
+  }
+]

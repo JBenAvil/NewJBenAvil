@@ -208,88 +208,97 @@
       </nav>
   </header>
 
-  <!-- body -->
-  <body class="bg-light">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <style>
-        .carousel-control-prev-icon, .carousel-control-next-icon {
-            background-color: black;
-            border-radius: 50%;
-            padding: 20px;
+<!-- body -->
+<body class="bg-light">
+  <br><br><br><br><br><br>
+  <style>
+      .carousel-control-prev-icon, .carousel-control-next-icon {
+          background-color: black;
+          border-radius: 50%;
+          padding: 20px;
+      }
+      .whatsapp-icon {
+          margin-right: 10px;
+      }
+      .ml-icon {
+          margin-right: 10px;
+      }
+       /* Ajuste del tamaño del carrusel para imágenes cuadradas y visibles completamente */
+       .carousel-item {
+            width: 100%;
+            height: 300px; /* Tamaño cuadrado */
+            
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa; /* Fondo para evitar espacios vacíos */
         }
-        .whatsapp-icon {
-            margin-right: 10px;
+        .carousel-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Ajustar imagen sin recorte */
         }
-        .ml-icon {
-            margin-right: 10px;
-        }
-    </style>
-    <section class="container py-5">
-        <div id="product-detail" class="row"></div>
-    </section>
-    
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const productId = parseInt(urlParams.get('id'));
+  </style>
+  <section class="container py-5">
+      <div id="product-detail" class="row"></div>
+  </section>
+  
+  <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = parseInt(urlParams.get('id'));
 
-        fetch('products.json')
-            .then(response => response.json())
-            .then(data => {
-                const product = data.find(p => p.id === productId);
-                if (product) {
-                    const productDetail = document.getElementById('product-detail');
-                    
-                    // Crear carrusel de imágenes dinámico
-                    const carouselItems = product.details.images.map((img, index) => `
-                        <div class="carousel-item ${index === 0 ? 'active' : ''}">
-                            <img src="${img}" class="d-block w-100" alt="${product.name}">
-                        </div>
-                    `).join('');
-                    
-                    // Crear enlace de WhatsApp dinámico
-                    const whatsappNumber = "56921951687"; // Número de WhatsApp sin el signo "+"
-                    const message = `Hola, quiero comprar ${product.name} que cuesta $${product.details.price}.`;
-                    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-                    
-                    productDetail.innerHTML = `
-                        <div class="col-md-6">
-                            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    ${carouselItems}
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-4 bg-white rounded shadow-sm">
-                                <h2>${product.name}</h2>
-                                <p>${product.details.description.replace(/\n/g, '<br>')}</p>
-                                <h4 class="text-primary">$${product.details.price.toLocaleString('es-CL')}</h4>
-                                <a href="${whatsappLink}" class="btn btn-success w-100 mb-2 d-flex align-items-center justify-content-center" target="_blank">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24" height="24" class="whatsapp-icon"> Pedir por WhatsApp
-                                </a>
+      fetch('products.json')
+          .then(response => response.json())
+          .then(data => {
+              const product = data.find(p => p.id === productId);
+              if (product) {
+                  const productDetail = document.getElementById('product-detail');
+                  
+                  // Crear carrusel de imágenes dinámico
+                  const carouselItems = product.details.images.map((img, index) => `
+                      <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                          <img src="${img}" class="d-block w-100" alt="${product.name}">
+                      </div>
+                  `).join('');
+                  
+                  // Crear enlace de WhatsApp dinámico
+                  const whatsappNumber = "56921951687"; // Número de WhatsApp sin el signo "+"
+                  const message = `Hola, quiero comprar ${product.name} que cuesta $${product.details.price}.`;
+                  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+                  
+                  productDetail.innerHTML = `
+                      <div class="col-md-6">
+                          <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                  ${carouselItems}
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon"></span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon"></span>
+                              </button>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="p-4 bg-white rounded shadow-sm">
+                              <h2>${product.name}</h2>
+                              <p>${product.details.description.replace(/\n/g, '<br>')}</p>
+                              <h4 class="text-primary">$${product.details.price.toLocaleString('es-CL')}</h4>
+                              <a href="${whatsappLink}" class="btn btn-success w-100 mb-2 d-flex align-items-center justify-content-center" target="_blank">
+                                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="24" height="24" class="whatsapp-icon"> Pedir por WhatsApp
+                              </a>
 
-                                <a href="${product.details.mercadoLibreLink}" class="btn btn-warning w-100 d-flex align-items-center justify-content-center">
-                                    <img src="https://companieslogo.com/img/orig/MELI-ec0c0e4f.png?t=1648156112" alt="Mercado Libre" width="24" height="auto" class="ml-icon">
-                                    Comprar en Mercado Libre
-                                </a>
+                              <a href="${product.details.mercadoLibreLink}" class="btn btn-warning w-100 d-flex align-items-center justify-content-center">
+                                  <img src="https://companieslogo.com/img/orig/MELI-ec0c0e4f.png?t=1648156112" alt="Mercado Libre" width="24" height="auto" class="ml-icon">
+                                  Comprar en Mercado Libre
+                              </a>
 
-                            </div>
-                        </div>
-                    `;
-                }
-            });
-    </script>
+                          </div>
+                      </div>
+                  `;
+              }
+          });
+  </script>
 
 
     <!--Section footer-->

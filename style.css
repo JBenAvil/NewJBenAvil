@@ -18,7 +18,6 @@ html {
   /* Improve media defaults */
 
   picture,
-  svg,
   img {  
     max-inline-size: 100%;
     object-fit: contain;

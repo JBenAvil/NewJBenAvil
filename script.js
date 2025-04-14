@@ -14,3 +14,4 @@ function sendWhatsAppMessage(titulo, precio, ) {
     // Abre el enlace de WhatsApp en una nueva pestaña
     window.open(urlWhatsApp, '_blank');
   }
+  

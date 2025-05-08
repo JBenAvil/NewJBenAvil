@@ -1,17 +1,32 @@
-function sendWhatsAppMessage(titulo, precio, ) {
-    // Construye el mensaje con la información de la tarjeta y el enlace de la imagen
-    const mensaje = `Hola, estoy interesado en el servicio de: ${titulo} \nPrecio: ${precio}`;
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.carrusel');
+    const items = document.querySelectorAll('.tarjeta');
+    let index = 0;
   
-    // Codifica el mensaje para usarlo en el enlace de WhatsApp
-    const mensajeCodificado = encodeURIComponent(mensaje);
+    function getItemWidth() {
+      return items[0].offsetWidth + 16; // Incluye margen
+    }
   
-    // Número de WhatsApp del vendedor
-    const numeroWhatsApp = "+56921951687";
+    function getVisibleItems() {
+      return Math.floor(container.parentElement.clientWidth / getItemWidth());
+    }
   
-    // Crea el enlace completo para WhatsApp
-    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
+    function updateCarousel() {
+      const itemWidth = getItemWidth();
+      container.style.transform = `translateX(-${index * itemWidth}px)`;
+    }
   
-    // Abre el enlace de WhatsApp en una nueva pestaña
-    window.open(urlWhatsApp, '_blank');
-  }
+    window.move = function(direction) {
+      const visibleItems = getVisibleItems();
+      const maxIndex = Math.max(0, items.length - visibleItems);
+      index = Math.max(0, Math.min(index + direction, maxIndex));
+      updateCarousel();
+    }
+  
+    // Escucha cambios de tamaño
+    window.addEventListener('resize', updateCarousel);
+  
+    updateCarousel();
+  });
+
   

@@ -67,7 +67,6 @@
     <link rel="icon" href="static/icon/iconJbenavil.png" type="image/png">
 
 
-
     <!-- link icon de google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,6 +74,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Arbutus+Slab&display=swap" rel="stylesheet">
     
     <!-- bootstraps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link
       rel="stylesheet"
@@ -89,12 +89,12 @@
     <link rel="stylesheet" href="style.css" />
    
     <script src="script.js"></script>
+    <script src="service.js"></script>
   </head>
 
-<header style="background-color: black;">
-    <!-- barra de navegación  
-      <div class="ms-0" style="margin-top: auto; margin-bottom: auto; margin-right: 50%;">-->
-      <nav style="background-color: black; opacity: 0.9; " class="navbar navbar-expand-lg fixed-top">
+<header style="background-color: #0C68B1;">
+    <!-- barra de navegación -->
+      <nav style="background-color: #0C68B1; opacity: 0.9;" class="navbar navbar-expand-lg navbar fixed-top">
         <div class="container-fluid">
           <a class="logo" href="index.html">
             <img class="logo" style="margin-right: 100px; margin-left: auto; width: 200px; height: auto;" 
@@ -111,13 +111,12 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
-            <div class="offcanvas-body" style="text-align: right; margin-top: 0%;  margin-right: auto; background-color: black;">
-
-              <ul class="navbar-nav">
+            <div class="offcanvas-body" style="background-color: #0C68B1;">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html"><b class="ranchers-regular">
                       <section style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/></svg>
+                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/></svg>
                         <br>Home</b></a>
                     </section>
                   </li>
@@ -125,41 +124,8 @@
                 <li class="nav-item">
                   <a class="nav-link" href="sobre_nosotros.html"><b class="ranchers-regular">
                     <section style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M180-217q60-56 135.9-90.5 75.89-34.5 164-34.5 88.1 0 164.1 34.5T780-217v-563H180v563Zm302-204q58 0 98-40t40-98q0-58-40-98t-98-40q-58 0-98 40t-40 98q0 58 40 98t98 40ZM180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm43-60h513q-62-53-125.5-77.5T480-282q-67 0-130.5 24.5T223-180Zm259-301q-32.5 0-55.25-22.75T404-559q0-32.5 22.75-55.25T482-637q32.5 0 55.25 22.75T560-559q0 32.5-22.75 55.25T482-481Zm-2-18Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M479.9-450q-53.9 0-91.9-38.1-38-38.1-38-92t38.1-91.9q38.1-38 92-38t91.9 38.1q38 38.1 38 92T571.9-488q-38.1 38-92 38Zm-.02-60q29.12 0 49.62-20.38 20.5-20.38 20.5-49.5t-20.38-49.62q-20.38-20.5-49.5-20.5t-49.62 20.38q-20.5 20.38-20.5 49.5t20.38 49.62q20.38 20.5 49.5 20.5ZM480-60 120-280v-400l360-220 360 220v400L480-60Zm0-71 167-101q-35-29-78-43.5T480-290q-46 0-89 14.5T313-232l167 101ZM256-267q48-38 105-60.5T480-350q62 0 119 22.5T704-267l76-45v-334.23L480-830 180-646.23V-312l76 45Zm224-214Z"/></svg>
                       <br>Nosotros</b></a>
-                  </section>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="#financiamiento"><b class="ranchers-regular">
-                    <section style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M451-120v-84q-57-10-93.5-43.5T305-332l56-23q17 48 49 71.5t77 23.5q48 0 79-24t31-66q0-44-27.5-68T466-467q-72-23-107.5-61T323-623q0-55 35.5-92t92.5-42v-83h60v83q45 5 77.5 29.5T638-665l-56 24q-14-32-37.5-46.5T483-702q-46 0-73 21t-27 57q0 38 30 61.5T524-514q68 21 100.5 60.5T657-354q0 63-37 101.5T511-203v83h-60Z"/></svg>
-                      <br>Financiamiento</b></a>
-                  </section>
-                </li>
-  
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="#formalización"><b class="ranchers-regular">
-                    <section style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M225-80q-43.75 0-74.37-30.63Q120-141.25 120-185v-135h120v-560h600v695q0 43.75-30.62 74.37Q778.75-80 735-80H225Zm509.91-60Q754-140 767-152.94q13-12.94 13-32.06v-635H300v500h390v135q0 19.12 12.91 32.06 12.91 12.94 32 12.94ZM360-640v-60h360v60H360Zm0 120v-60h360v60H360ZM224-140h406v-120H180v75q0 19.12 13 32.06Q206-140 224-140Zm0 0h-44 450-406Z"/></svg>
-                      <br>Formalización</b></a>
-                  </section>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="#contabilidad"><b class="ranchers-regular">
-                    <section style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M450-240h60v-40h60q12.75 0 21.38-8.63Q600-297.25 600-310v-130q0-12.75-8.62-21.38Q582.75-470 570-470H420v-70h180v-60h-90v-40h-60v40h-60q-12.75 0-21.37 8.62Q360-582.75 360-570v130q0 12.75 8.63 21.37Q377.25-410 390-410h150v70H360v60h90v40ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h341l239 239v501q0 24-18 42t-42 18H220Zm0-60h520v-474L534-820H220v680Zm0 0v-680 680Z"/></svg>
-                      <br>Contabilidad</b></a>
-                  </section>
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="#identidad"><b class="ranchers-regular">
-                    <section style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-600H180v600Zm56-97h489L578-473 446-302l-93-127-117 152Zm-56 97v-600 600Zm160.12-390q20.88 0 35.38-14.62 14.5-14.62 14.5-35.5 0-20.88-14.62-35.38-14.62-14.5-35.5-14.5-20.88 0-35.38 14.62-14.5 14.62-14.5 35.5 0 20.88 14.62 35.38 14.62 14.5 35.5 14.5Z"/></svg>
-                      <br>Identidad</b></a>
                   </section>
                 </li>
 
@@ -170,6 +136,14 @@
                       <br>Planes</b></a>
                     </section>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#clientes"><b class="ranchers-regular">
+                    <section style="text-align: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M180-217q60-56 135.9-90.5 75.89-34.5 164-34.5 88.1 0 164.1 34.5T780-217v-563H180v563Zm302-204q58 0 98-40t40-98q0-58-40-98t-98-40q-58 0-98 40t-40 98q0 58 40 98t98 40ZM180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm43-60h513q-62-53-125.5-77.5T480-282q-67 0-130.5 24.5T223-180Zm259-301q-32.5 0-55.25-22.75T404-559q0-32.5 22.75-55.25T482-637q32.5 0 55.25 22.75T560-559q0 32.5-22.75 55.25T482-481Zm-2-18Z"/></svg>
+                      <br>Clientes</b></a>
+                  </section>
+              </li>
   
                 <li class="nav-item">
                   <a class="nav-link" href="#otros_servicios"><b class="ranchers-regular">
@@ -178,6 +152,14 @@
                       <br>Servicios</b></a>
                   </section>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#editorial"><b class="ranchers-regular">
+                    <section style="text-align: center;">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="m307-326-87-357 260-237 260 237-87 357H307Zm47-60h252l68-277-164-148v143q14 8 23 22t9 31q0 25-18 43t-44 18q-26 0-44-18t-18-43q0-17 9-31t23-22v-143L286-663l68 277ZM160-120l21-57q8-22 27-35.5t42-13.5h460q23 0 42 13.5t27 35.5l21 57H160Z"/></svg>
+                      <br>Editorial</b></a>
+                  </section>
+              </li>
   
                 <li class="nav-item">
                   <a class="nav-link" href="ecommerce.html"><b class="ranchers-regular">
@@ -196,606 +178,155 @@
 
   <!-- body -->
 <body>
+  <script src="service.js"></script>
     <br>
     <br>
     <br>
     <br>
-
-<section style="background-color: rgb(53, 54, 56);">
+<section style="background-color: rgb(255, 255, 255);">
     <br>
     <br>
     <div class="Heading" style="margin-left: 20PX; margin-right: 20px;">
-        <h2 style="color: white"><b>Soluciones de Profesionales
-            <br>
-            para el Éxito de tu PYME</b></h2>
+        <h2 style="color: #0C68B1"><b>Soluciones para Emprendedores</h2>
         <br>
         <br>
-        <b class="content d-flex flex-column justify-content-center" style="color: white; text-align: justify;">
-            No estás solo/a en este camino. 
-            Estamos aquí para acompañarte en cada paso de tu proceso de formalización y escalabilidad. 
-            Juntos, llevaremos tu emprendimiento o PYME a su máximo potencial, cofinanciando tu crecimiento 
-            mediante nuestro exclusivo sistema de gestión, diseñado 
-            específicamente para personas naturales y Pymes.
-            <br>
-            <br>
-            Conoce cada una de las fases que recorreremos juntos. 
-            Puedes unirte en cualquier momento del proceso; sin importar en qué etapa te encuentres, 
-            estamos aquí para ayudarte a superar los desafíos y alcanzar tus objetivos.
-            <br>
-            <br> 
-            ¡Tu éxito es nuestra misión!
-        </b>
+        <div class="row">
+            <div class="col-md-8">
+                <b class="content d-flex flex-column justify-content-center" style="color: #0C68B1; text-align: justify;">
+                    No estás solo/a en este camino. 
+                    Estamos aquí para acompañarte en cada paso de tu proceso de formalización y escalabilidad. 
+                    Juntos, llevaremos tu emprendimiento a su máximo potencial.
+                    <br>
+                    <br> 
+                    ¡Tu éxito es nuestra misión!
+                    <br>
+                    <br>
+                    <a style="text-decoration: none; text-align: center;" href="pasos_para_la_formalizacion.html">
+                    <button class="btn-formalizacion">Conoce el Paso a Paso de Formalización</button>
+                    </a>
+                    
+                </b>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <img src="static/banners/vende+.png" alt="Logo" class="img-fluid" style="width: 100%; height: auto; margin-top: 20px;">
+            </div>
+        </div>
     </div>
-    <br>
-    <br>
-    <!--Section FASE 1 -->
-    <section id="financiamiento">
-        <div class="container" id="">
-            <div class="Heading">
-                <h1>FASE 1</h1>
+    <div class="Heading" style="background-color:#EA3A44; overflow: hidden; white-space: nowrap;">
+        <h4>
+            <b class="marquee-text" style="color: rgb(255, 255, 255); display: inline-block; margin-top: 10px;">
+            Abtén 3 Meses Gratis Contratando Tu Plan Emprendedor, Oferta Exclusiva para Nuevos Eprendedores.
+            </b>
+        </h4>
+    </div>
+
+    <!--secction plan emprendedor-->
+      
+      <section style="color: #0C68B1;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 order-md-1 order-1 text-white">
+              <br>
+              <h3><b style="color: #0C68B1;">Aprovecha Tu Plan Emprendedor</b></h3>
+              <br>
+              <b style="color: #0C68B1;">Incluye:</b>
+              <br>
+              <br>
+              <ul style="list-style: none;">
+                    <li class="beneficio">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="48px" 
+                        viewBox="0 -960 960 960" 
+                        width="48px" 
+                        fill="#0C68B1">
+                        <path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/>
+                        </svg> 3 Meses Gratis
+                    </li>
+                    <li class="beneficio">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="48px" 
+                        viewBox="0 -960 960 960" 
+                        width="48px" 
+                        fill="#0C68B1">
+                        <path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/>
+                        </svg> Formalización de Empresa
+                    </li>
+                    <li class="beneficio">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="48px" 
+                        viewBox="0 -960 960 960" 
+                        width="48px" 
+                        fill="#0C68B1">
+                        <path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/>
+                        </svg> Inicio de Actividades
+                    </li> 
+                    <li class="beneficio">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="48px" 
+                        viewBox="0 -960 960 960" 
+                        width="48px" 
+                        fill="#0C68B1">
+                        <path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/>
+                        </svg> Inscripción de Boletas y Facturas del SII
+                    </li>
+                    <li class="beneficio">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="48px" 
+                        viewBox="0 -960 960 960" 
+                        width="48px" 
+                        fill="#0C68B1">
+                        <path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/>
+                        </svg> Contabilidad Mensual
+                    </li> 
+                    <li class="beneficio">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="48px" 
+                        viewBox="0 -960 960 960" 
+                        width="48px" 
+                        fill="#0C68B1">
+                        <path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/>
+                        </svg> Inscripción en el Registro de PYMES
+                    </li>   
+                    <li class="beneficio">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="48px" 
+                        viewBox="0 -960 960 960" 
+                        width="48px" 
+                        fill="#0C68B1">
+                        <path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/>
+                        </svg> Asesoría Administrativa Ilimitada
+                    </li>
+                    <li class="beneficio">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        height="48px" 
+                        viewBox="0 -960 960 960" 
+                        width="48px" 
+                        fill="#0C68B1">
+                        <path d="m346-60-76-130-151-31 17-147-96-112 96-111-17-147 151-31 76-131 134 62 134-62 77 131 150 31-17 147 96 111-96 112 17 147-150 31-77 130-134-62-134 62Zm27-79 107-45 110 45 67-100 117-30-12-119 81-92-81-94 12-119-117-28-69-100-108 45-110-45-67 100-117 28 12 119-81 94 81 92-12 121 117 28 70 100Zm107-341Zm-43 133 227-225-45-41-182 180-95-99-46 45 141 140Z"/>
+                        </svg> Página Web
+                    </li>  
+                </ul>
+              </ul>
+            </div>
+
+            <div class="col-md-6 order-md-2 order-2 text-center">
+              <div class="oferta">
+                ¡Por Solo
                 <br>
+                CLP $25.000!
+                </div>
+              <img src="static/banners/body_wo.png" alt="Logo" class="img-fluid mt-3" style="max-width: 100%; height: auto;">
             </div>
-            <div class="timeline">
-                <div class="timeline-month">
-                    FASE 1
-                </div>
-                <div class="Heading" style="margin-left: 20PX; margin-right: 20px;">
-                    
-                    <b class="content d-flex flex-column justify-content-center" style="color: white; text-align: justify; margin-left: 10px;">
-                        En esta primera fase se define gran parte del éxito de tu negocio; 
-                        Sabías que es mejor dar un pequeño paso sabiendo exactamente a donde 
-                        te diriges, que dar mil pasos sin saber a dónde vas. 
-                        Es Justamente la dirección a la que quieres llegar lo que se define 
-                        en esta primera fase. 
-                        <br>
-                        <br>
-                        Aquí desarrollaremos tu Visión, Misión, Objetivos Generales, Pilares Fundamentales y 
-                        Valores Corporativos que te permitirán conocer exactamente la dirección de tu negocio, 
-                        estableciendo una línea a seguir para evitar distracciones futuras como expansiones 
-                        innecesarias o malas inversiones que no van a acorde al giro de tu negocio.
-                        <br>
-                        <br>
-                        Además, esta primera fase te permitirá establecer tu modelo de negocio, 
-                        conociendo en profundidad los distintos procesos de tu negocio.
-                        <br>
-                        <br>
-                        Conoce a continuación en detalle cada uno de los pasos que seguiremos en esta FASE 1
-                    </b>
-                    <br>
-                    <br>
-                </div>
-
-                <!--Paso 1-->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 1
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        data_exploration
-                                    </span> Análisis de la Propuesta
-                                </div>
-                                <div class="box-content">
-                                    <div class="box-item" 
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">En este Paso 1, lo primero que debes hacer es enviarnos tu 
-                                    propuesta o idea de negocio, explicando de forma general en que consiste y dónde 
-                                    quieres llegar; la forma más fácil de 
-                                    hacerlo es a través de nuestro WhatsApp con un mensaje de audio.
-                                    <br>
-                                    Una Vez recepcionado, se te asigna inmediatamente un administrador que te acompañará y 
-                                    guiará durante todo el proceso.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Paso 2-->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 2
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        emoji_objects
-                                    </span> Idea de Negocios
-                                </div>
-                              
-                                <div class="box-content">
-                                    <div class="box-item" 
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Tu administrador se contactará contigo para informarte la viabilidad de tu propuesta y la 
-                                    metodología a trabajar para posicionarte en el mercado.
-                                        <br>
-                                        En este paso decidirás si quieres crecer con nosotros, firmando un contrato indefinido 
-                                        que establecerá los profesionales que te acompañarán en el crecimiento de tu negocio.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
-
-                <!-- Paso 3 -->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 3
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        modeling
-                                    </span> Modelo de Negocio
-                                </div>
-                              
-                                <div class="box-content">
-                                    <div class="box-item"
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Se crea un modelo de negocio único y específicamente orientado
-                                        a los procesos internos y externos para tu negocio, esto te permitirá establecer protocolos
-                                        que harán que cualquiera puede llevar tu negocio cuando tú no estes disponible para administrarlo.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paso 4 -->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 4
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        edit_document
-                                    </span> Escritura Pública
-                                </div>
-                              
-                                <div class="box-content">
-                                    <div class="box-item"
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Tú empresa en papel alineada a tus objetivos, 
-                                    con una dirección clara que te permitirá establecer una ruta a seguir para esos 
-                                    momentos de incertidumbre o impulsos de nuevas inversiones sin sentidos de algunos 
-                                    emprendedores, que deja a muchos, sin capital de trabajo o en la ruina. 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paso 5 -->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 5
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        attach_money
-                                    </span> Financiamiento
-                                </div>
-                              
-                                <div class="box-content">
-                                    <div class="box-item"
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Aquí evaluamos tu capital de trabajo o buscamos financiamiento 
-                                    en las distintas líneas de apoyo social del Gobierno de Chile como "Capitales Semillas" 
-                                    en FOSIS, SERCOTEC, CORFO, ETC. Sea cual sea el caso, necesitarás cada uno de los 
-                                    pasos anteriores para tu proyecto, pero ojo... la asignación de posibles líneas de 
-                                    financiamiento NO depende de nosotros, ya que estos, son concursos públicos 
-                                    gubernamentales, que no están al alcance de nuestra administración. 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-    <br>
-    <br>
-     <!--Banner de instituciones -->
-     <section style="background-color: white; display:inline-block; text-align: center;">
-        <br>
-        <img style="margin-left: 20px;" src="static/banners/logo_fosis.png" width="20%" height="auto">
-        <img style="margin-left: 20px;" src="static/banners/logo_sercotec.png" width="20%" height="auto">
-        <img style="margin-left: 20px;" src="static/banners/logo_corfo.png" width="20%" height="auto">
-        <img style="margin-left: 20px;" src="static/banners/logo_fundacion_luksic.png" width="20%" height="auto">
-        <br>
-        <br>
-    </section>
-    <br>
-    <br>
-    <!--Section FASE 2 -->
-    <section id="formalización">
-        <div class="container" id="#formalización">
-            <div class="Heading">
-                <h1>FASE 2</h1>
-                <br>
-            </div>
-            <div class="timeline">
-                <div class="timeline-month">
-                    FASE 2
-                </div>
-                <div class="Heading" style="margin-left: 20PX; margin-right: 20px;">
-                    
-                    <b class="content d-flex flex-column justify-content-center" style="color: white; text-align: justify; margin-left: 10px;">
-                        En esta segunda fase comenzaremos con la formalización de tu negocio, 
-                        determinaremos si lo mejor para ti es continuar como persona natural o
-                        buscaremos la mejor opción para tu empresa.
-                        <br>
-                        <br>
-                        Conoce a continuación en detalle cada uno de los pasos que seguiremos en esta FASE 2
-                    </b>
-                    <br>
-                    <br>
-                </div>
+      </section>
+    
+      <!--Planes-->
 
-                <!--Paso 1-->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 1
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        upload_file
-                                    </span> Empresa en 1 día
-                                </div>
-                                <div class="box-content">
-                                    <div class="box-item" 
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">En este Paso 1, formalizaremos tu empresa en la plataforma 
-                                    "Empresa en 1 Día" para la obtención del RUT que nos permitirá realizar
-                                    la declaración de iniciación de actividades en el Servicio de Impuestos Internos.
-                                    <br>
-                                    Realizar la firma electrónica de la documentación requiere un costo menor externos
-                                    que debe realizar cada socio firmante, la compra de una firma electrónica
-                                    tiene un valor desde CLP $800 a CLP $5.000 aproximadamente 
-                                    y tiene una durabilidad de 1 uso.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Paso 2-->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 2
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        folder_check_2
-                                    </span> Inicio de Actividades
-                                </div>
-                              
-                                <div class="box-content">
-                                    <div class="box-item" 
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Obtenido el RUT de tu empresa, ya sea como Persona 
-                                    Natural o Persona Jurídica, comienza inmediatamente la declaración de iniciación de 
-                                    actividades, inscripción de documentos tributarios y verificación de actividades 
-                                    para la emisión de facturas electrónicas.
-                                    <br>
-                                    El representante legal deberá adquirir un Certificado Digital para la firma de facturas 
-                                    electrónica, los que tiene un valor de CLP $12.000 a CLP $25.000 aproximadamente y tiene 
-                                    una durabilidad de 1 a 3 años.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              
-
-                <!-- Paso 3 -->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 3
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        file_save
-                                    </span> Resolución Sanitaria
-                                </div>
-                              
-                                <div class="box-content">
-                                    <div class="box-item"
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Ya seas vendedor ambulante o formalices una empresa que tenga movimientos 
-                                    relacionados con alimentos, debes obtener tu resolución sanitaria del Ministerio de Salud. Este trámite 
-                                    tiene sus propios costos aparte y cuenta con beneficios para personas específicas que cuenten
-                                    con ciertas características.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>      
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <!--Banner de instituciones -->
-    <section style="background-color: white; display:inline-block; text-align: center;">
-        <br>
-        <img style="margin-left: 20px;" src="static/banners/logo_e1d.png" width="20%" height="auto" >
-        <img style="margin-left: 20px;" src="static/banners/logo_sii.png" width="20%" height="auto">
-        <img style="margin-left: 20px;" src="static/banners/logo_ms.png" width="20%" height="auto">
-        <br>
-        <br>
-    </section>
-    <br>
-    <br>
-
-    <!--Section FASE 3 -->
-    <section id="contabilidad">
-        <div class="container" id="#contabilidad">
-            <div class="Heading">
-                <h1>FASE 3</h1>
-                <br>
-            </div>
-            <div class="timeline">
-                <div class="timeline-month">
-                    FASE 3
-                </div>
-                <div class="Heading" style="margin-left: 20PX; margin-right: 20px;">
-                    
-                    <b class="content d-flex flex-column justify-content-center" style="color: white; text-align: justify; margin-left: 10px;">
-                        En esta tercera fase nos hacemos cargo de la contabilidad mensual de tu empresa,
-                        ya sea como Persona Natural o como Persona Jurídica, deberás cumplir con el pago de impuestos 
-                        correspondientes a tus giros declarados en la iniciación de actividades.
-                        <br>
-                        <br>
-                        Conoce a continuación en detalle cada uno de los pasos que seguiremos en esta FASE 3
-                    </b>
-                    <br>
-                    <br>
-                </div>
-
-                <!--Paso 1-->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 1
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        request_quote
-                                    </span> Contabilidad
-                                </div>
-                                <div class="box-content">
-                                    <div class="box-item" 
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Aquí nos hacemos cargo como partner empresarial de la 
-                                    contabilidad mensual de tu empresa, con la declaración de los Formularios 29 correspondientes.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paso 2 -->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 2
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        account_balance
-                                    </span> Obtención de Medios de Pago
-                                </div>
-                              
-                                <div class="box-content">
-                                    <div class="box-item"
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Es importante conseguir una opción de Pago asociado al RUT de tu empresa, 
-                                    esto te permitirá dividir tus finanzas y llevar un mejor control de tu negocio.
-                                    <br>
-                                    La cuenta empresa es un trámite esencial, sin embargo, hoy existen otros medios aplicables como una 
-                                    billetera digital donde podrás obtener links de pagos o códigos Qr para tu negocio.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <!--Banner de Medios de Pagos -->
-    <section style="background-color: white; text-align: center; display: inline-block;">
-        <br>
-        <br>
-        <img style="margin-left: 20px; margin-right: 20px;" src="static/banners/logo_paypal.png" width="20%" height="auto">
-        <img style="margin-left: 20px; margin-right: 20px;" src="static/banners/logo_mach.png" width="20%" height="auto">
-        <img style="margin-left: 20px; margin-right: 20px;" src="static/banners/logo_mp.png" width="20%" height="auto">
-        <img style="margin-left: 20px; margin-right: 20px;" src="static/banners/logo_compra_aqui.png" width="20%" height="auto">
-        <img style="margin-left: 20px; margin-right: 20px;" src="static/banners/logo_transbanck.png" width="20%" height="auto">
-        <br>
-        <br>
-    </section>
-    <br>
-    <br>
-
-    <!--Section FASE 4 -->
-    <section id="identidad">
-        <div class="container" id="#identidad">
-            <div class="Heading">
-                <h1>FASE 4</h1>
-                <br>
-            </div>
-            <div class="timeline">
-                <div class="timeline-month">
-                    FASE 4
-                </div>
-                <div class="Heading" style="margin-left: 20PX; margin-right: 20px;">
-                    
-                    <b class="content d-flex flex-column justify-content-center" style="color: white; text-align: justify; margin-left: 10px;">
-                        En esta cuarta fase nos preocupamos de establecer y mantener tu imagen corporativa, ayudándote en la creación de logos, 
-                        etiquetas, packaging y mucho más.
-                        <br>
-                        También diseñamos y mantenemos tu página Web informativa.
-                        <br>
-                        <br>
-                        Conoce a continuación en detalle cada uno de los pasos que seguiremos en esta FASE 4
-                    </b>
-                    <br>
-                    <br>
-                </div>
-
-                <!--Paso 1-->
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 1
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        planner_banner_ad_pt
-                                    </span> Imagen Empresarial<p class="degree">
-                                </div>
-                                <div class="box-content">
-                                    <div class="box-item" 
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Diseñamos y mantenemos tu imagen corporativa, 
-                                    proporcionándote diseños para tu empresa, como packaging personalizados, 
-                                    información nutricional, sellos y stickers. 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Paso 2-->
-
-                <div class="timeline-section">
-                    <div class="timeline-date">
-                        Paso 2
-                    </div>
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="timeline-box">
-                                <div class="box-title">
-                                    <span class="material-symbols-outlined">
-                                        language
-                                    </span> Sitio Web
-                                </div>
-                              
-                                <div class="box-content">
-                                    <div class="box-item"
-                                    class="content d-flex flex-column justify-content-center" 
-                                    style="text-align: justify;">Diseñamos tu sitio web informativo que le dará 
-                                    una imagen profesional a tu empresa.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <style>
-        .card-container {
-            perspective: 1000px;
-        }
-
-        .card-body-plan {
-            width: 100%;
-            height: 300px;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.6s;
-        }
-
-        .card-container.flip .card-body-plan {
-            transform: rotateY(180deg);
-        }
-
-        .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .card-front {
-            background-color: #001532;
-            color: white;
-        }
-
-        .card-back {
-            background-color: #000000;
-            color: white;
-            transform: rotateY(180deg);
-        }
-
-        .flip-btn {
-            margin-top: 10px;
-            cursor: pointer;
-            background-color: white;
-            color: #003366;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-    </style>
-    <section id="planes" style="background-color: #001532; padding: 50px 0;">
+    <section id="planes" style="background-color: #EA3A44; padding: 50px 0;">
         <div class="container text-center text-white">
-            <h2 style="color: white;"><b>Nuestros Planes</b></h2>
-            <h3>Nuestro Objetivo es llevar tu Emprendimiento al Plan Empresa</h3>
+            <h2 style="color: white;"><b>Conoce Nuestros Planes</b></h2>
             <div class="row mt-5">
                 <div  class="col-sm-4 mb-4 mb-sm-0">
                     <div class="card-container" onclick="flipCard(this)">
@@ -813,10 +344,11 @@
                                 <button class="flip-btn">Ver Más</button>
                             </div>
                             <div class="card-back">
-                                <h4>Incluye:</h4>
-                                <p>Asesorias Ilimitadas</p> 
+                                <h4>Incluye</h4>
+                                <br>
+                                <p>Asesoria Administrativa</p>
+                                <p>Formalización</p> 
                                 <p>Contabilidad Mensual</p>
-                                <p>4 Diseños Gráficos</p>
                                 <p>Página Web</p>
                                 <button class="flip-btn">Volver</button>
                             </div>
@@ -839,10 +371,11 @@
                                 <button class="flip-btn">Ver Más</button>
                             </div>
                             <div class="card-back">
-                                <h4>Incluye:</h4>
-                                <p>Asesorias Ilimitadas</p> 
+                                <h4>Incluye</h4>
+                                <br>
+                                <p>Auditoría Interna</p>
+                                <p>Asesoria Administrativa</p> 
                                 <p>Contabilidad Mensual</p>
-                                <p>4 Diseños Gráficos</p>
                                 <p>Página Web</p>
                                  <button class="flip-btn">Volver</button>
                             </div>
@@ -864,10 +397,11 @@
                                 <button class="flip-btn">Ver Más</button>
                             </div>
                             <div class="card-back">
-                                <h4>Incluye:</h4>
-                                <p>Asesorias Ilimitadas</p> 
+                                <h4>Incluye</h4>
+                                <br>
+                                <p>Auditoría Interna</p>
+                                <p>Asesoria Administrativa</p> 
                                 <p>Contabilidad Mensual</p>
-                                <p>4 Diseños Gráficos</p>
                                 <p>Página Web</p>
                                 <button class="flip-btn">Volver</button>
                             </div>
@@ -884,8 +418,96 @@
         }
     </script>
 
+    <!--Seccion de clientes-->
+    <br>
+    <h1 class="titulo-1" style="color: #0C68B1; text-align: center;"><b>Nuestros Clietes</b></h1>
+    <br>
+    <br>
+    <section class="body-carrusel" id="clientes">
+      <div class="carrusel-container">
+        <button class="nav-btn left" onclick="move(-1)">&#10094;</button>
+        <div class="carrusel">
+            <div class="tarjeta" onclick="location.href='https://www.agmetalspa.com'">
+                <div style="text-align: center;">
+                  <img src="static/clientes/logo_ag_metal.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <p style="text-align: center;"><b>A&G METAL</b></p>
+            </div>
 
+            <div class="tarjeta" onclick="location.href='https://www.creacionesmaxico.com'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_maxico.png" class="img-fluid rounded-start" alt="...">
+              </div>
+                <p style="text-align: center;"><b>Creaciones Maxico</b></p>
+            </div>
 
+            <div class="tarjeta" onclick="location.href='https://www.propiedadesfrontera.com'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_propiedades_frontera.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Propiedades Frontera</b></p>
+            </div>
+
+            <div class="tarjeta" onclick="location.href='https://www.vosziusclass.com'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_voszius.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Voszius Class</b></p>
+            </div>      
+
+            <div class="tarjeta" onclick="location.href='https://www.conectapsicologo.com'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_conecta.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Conecta Psicología</b></p>
+            </div>
+
+            <div class="tarjeta" onclick="location.href='https://www.defensoriapenal.mx'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_dp.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Defensoría Penal</b></p>
+            </div>
+
+            <div class="tarjeta" onclick="location.href='https://www.petithostal.com'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_petit.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Petit Hostal</b></p>
+            </div>
+
+            <div class="tarjeta" onclick="location.href='https://barrioportales.vercel.app'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_bp.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Barrio Portales</b></p>
+            </div>
+
+            <div class="tarjeta" onclick="location.href='https://www.industriapenitenciaria.mx'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_ip.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Industría Penitenciaria</b></p>
+            </div>
+
+            <div class="tarjeta" onclick="location.href='https://prismaplataforma.vercel.app'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_prisma.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Prisma Plataforma</b></p>
+            </div>
+
+            <div class="tarjeta" onclick="location.href='https://www.undiamasundiamenos.mx'">
+              <div style="text-align: center;">
+                <img src="static/clientes/logo_udm.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <p style="text-align: center;"><b>Un Día Más, Un Día Menos</b></p>
+            </div>
+             <!--Agrega más tarjetas según necesites -->
+          </div>
+          <button class="nav-btn right" onclick="move(1)">&#10095;</button>
+        </div>
+      </section>
 
     <!--Banner de valor-->
     <section style="background-color: black;">
@@ -923,413 +545,164 @@
         </div>
     </section>
 
-    <!-- Nuestros Clientes-->
-    <section style="background-color: #001532;">
-        <br>
-        <div class="Heading" style="margin-left: 20PX; margin-right: 20px;">
-            <h3 style="color: white"><b>Muchos Ya Han Confiado en Nosotros
-                <br>
-                Conoce a Nuestros Clientes</b>
-            </h3>
-            <br>
+    <!--servicios-->
+    <style>
+      .icon-circle {
+        width: 100px;
+        height: 100px;
+        background-color: #0C68B1;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+      .icon-circle:hover {
+        background-color: #EA3A44;
+        transform: scale(1.1);
+      }
+      .icon-circle svg {
+        fill: white;
+        width: 48px;
+        height: 48px;
+      }
+      .service-label {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      </style>
+      <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+          const response = await fetch('servicios.json');
+          const servicios = await response.json();
+        
+          const container = document.getElementById('servicios-container');
+        
+          servicios.forEach(servicio => {
+            const col = document.createElement('div');
+            col.className = 'col-sm-3 mb-4';
+        
+            col.innerHTML = `
+              <div class="icon-circle" onclick="abrirModal('${servicio.id}')">
+                ${servicio.svg}
+              </div>
+              <div class="service-label">${servicio.nombre}</div>
+            `;
+        
+            container.appendChild(col);
+          });
+        
+          window.abrirModal = (id) => {
+            const servicio = servicios.find(s => s.id === id);
+            document.getElementById('servicioTitulo').textContent = servicio.nombre;
+            
+            // Procesamos \n\n como separador de párrafos y listas
+            const secciones = servicio.contenido.split('\n\n').map(parrafo => {
+              if (parrafo.includes('-')) {
+                const items = parrafo.split('\n').map(i => `<li>${i.replace('-', '').trim()}</li>`).join('');
+                return `<ul>${items}</ul>`;
+              }
+              return `<p>${parrafo}</p>`;
+            });
+        
+            document.getElementById('servicioContenido').innerHTML = secciones.join('');
+            const modal = new bootstrap.Modal(document.getElementById('servicioModal'));
+            modal.show();
+          };
+        });
+        </script>
+        
+      
+    <section id="otros_servicios" class="py-5 text-center">
+      <div class="container">
+        <h3 class="mb-5" style="color: #0C68B1;"><b>Encuentra el Mejor Apoyo para ti</b></h3>
+        <div class="row" id="servicios-container">
+          <!-- Aquí se inyectarán los servicios desde JSON -->
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.agmetalspa.com/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_ag_metal.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>A&G Mental</h5>
-                </a>
-                </div>
-            </div>
-            <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.creacionesmaxico.com/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_maxico.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Creaciones Maxico</h5>
-                </a>
-                </div>
-            </div>
-            <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.vosziusclass.com/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_voszius.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Voszius Class</h5>
-                </a>
-                </div>
-              </div>
-              <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.conectapsicologo.com/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_conecta.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Conecta Psicología</h5>
-                </a>
-                </div>
-              </div>
-              <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.petithostal.com">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_petit.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Petit Hostal</h5>
-                </a>
-                </div>
-              </div>
-              <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.defensoriapenal.mx/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_dp.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Defensoría Penal</h5>
-                </a>
-                </div>
-              </div>
-              <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://prismaplataforma.vercel.app/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_prisma.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Prisma Plataforma</h5>
-                </a>
-                </div>
-              </div>
-              <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.propiedadesfrontera.com/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_propiedades_frontera.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Propiedades Frontera</h5>
-                </a>
-                </div>
-              </div>
-              <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://barrioportales.vercel.app/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_bp.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Barrio Portales</h5>
-                </a>
-                </div>
-              </div>
-              <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.industriapenitenciaria.mx/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_ip.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Intitución Penitenciaria</h5>
-                </a>
-                </div>
-              </div>
-              <div class="carousel-item" style="text-align: center;">
-                <a style="text-decoration: none;" href="https://www.undiamasundiamenos.mx/">
-                <img style="width: 200px; height: auto;" src="static/clientes/logo_udm.png" alt="...">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Un Dia Más Un Dia Menos</h5>
-                </a>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+      </div>
     </section>
-    <!-- Otros servicios-->
-    <section id="otros_servicios">
-        <br>
-        <div class="Heading" style="margin-left: 20PX; margin-right: 20px;">
-            <h3 style="color: white"><b>Más Servicios para Tu Negocio</b></h3>
-            <br>
-            <br>
-            <br>
-            <div class="row">
-              <div class="col-sm-3 mb-4 mb-sm-0">
-                  <div class="card-body">
-                    <br>
-                    <div style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FF6E17"><path d="M80-680v-80q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v80h-80v-80H160v80H80Zm240 560v-80H160q-33 0-56.5-23.5T80-280v-80h80v80h640v-80h80v80q0 33-23.5 56.5T800-200H640v80H320Zm160-400Zm-288 0 104-104-56-56L80-520l160 160 56-56-104-104Zm576 0L664-416l56 56 160-160-160-160-56 56 104 104Z"/></svg>
-                    </div>
-                    <br>
-                    <div style="text-align: center;">
-                    <b>Páginas Web</b>
-                    </div>
-                    <br>
-                    <br>
-                    <div style="text-align: center; margin-left: 10px; margin-right: 10px;">
-                      <a href="./service/paginas_web.html" class="btn-ver-mas" style="width: 100%;">Ver Más</a>
-                    </div>
-                    <br>
-                  </div>
-              </div>
-      
-      
-      
-              <br>
-              <div class="col-sm-3 mb-4 mb-sm-0">
-                  <div class="card-body">
-                    <br>
-                    <div style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FF6E17"><path d="M150-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v60h60v60h-60v150h60v60h-60v150h60v60h-60v60q0 24-18 42t-42 18H150Zm0-60h600v-600H150v600Zm60-60h253v-200H210v200Zm283-336h197v-144H493v144ZM210-470h253v-250H210v250Zm283 230h197v-306H493v306ZM150-780v600-600Z"/></svg>
-                    </div>
-                    <br>
-                    <div style="text-align: center;">
-                    <b>Catálogo de Producto</b>
-                    </div>
-                    <br>
-                    <br>
-                    <div style="text-align: center; margin-left: 10px; margin-right: 10px;">
-                        <a href="./service/catalogos.html" class="btn-ver-mas" style="width: 100%;">Ver Más</a>
-                    </div>
-                    <br>
-                  </div>
-              </div>
-      
-      
-              <div class="col-sm-3 mb-4 mb-sm-0">
-                  <div class="card-body">
-                    <br>
-                    <div style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FF6E17"><path d="M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480-660q-75 0-127.5 52.5T300-480q0 67 42.5 116.5T449-303l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z"/></svg>
-                    </div>
-                    <br>
-                    <div style="text-align: center;">
-                    <b>Marketing Digital</b>
-                    </div>
-                    <br>
-                    <br>
-                    <div style="text-align: center; margin-left: 10px; margin-right: 10px;">
-                        <a href="./service/marketing.html" class="btn-ver-mas" style="width: 100%;">Ver Más</a>
-                    </div>
-                    <br>
-                  </div>
-              </div>
-      
-              
-      
-              <br>
-              <div class="col-sm-3 mb-4 mb-sm-0">
-                <div class="card-body">
-                    <br>
-                    <div style="text-align: center;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FF6E17"><path d="m307-326-87-357 260-237 260 237-87 357H307Zm47-60h252l68-277-164-148v143q14 8 23 22t9 31q0 25-18 43t-44 18q-26 0-44-18t-18-43q0-17 9-31t23-22v-143L286-663l68 277ZM160-120l21-57q8-22 27-35.5t42-13.5h460q23 0 42 13.5t27 35.5l21 57H160Z"/></svg>
-                    </div>
-                    <br>
-                    <div style="text-align: center;">
-                    <b>Editorial</b>
-                    </div>
-                    <br>
-                    <br>
-                    <div style="text-align: center; margin-left: 10px; margin-right: 10px;">
-                        <a href="./service/editorial.html" class="btn-ver-mas" style="width: 100%;">Ver Más</a>
-                    </div>
-                    <br>
-                </div>
-              </div>
-            </div>
-
-
-        <!-- segunda corrida de otros servicios -->
-
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-sm-3 mb-4 mb-sm-0">
-              <div class="card-body">
-                <br>
-                <div style="text-align: center;">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FF6E17"><path d="M475-140q5 0 11.5-2.5T497-149l337-338q13-13 19.5-29.67Q860-533.33 860-550q0-17-6.5-34T834-614L654-794q-13-13-30-19.5t-34-6.5q-16.67 0-33.33 6.5Q540-807 527-794l-18 18 81 82q13 14 23 32.5t10 40.5q0 38-29.5 67T526-525q-25 0-41.5-7.5t-30.19-21.34L381-627 200-446q-5 5-7 10.53-2 5.52-2 11.84 0 12.63 8.5 21.13 8.5 8.5 21.17 8.5 6.33 0 11.83-3t9.5-7l138-138 42 42-137 137q-5 5-7 11t-2 12q0 12 9 21t21 9q6 0 11.5-2.5t9.5-6.5l138-138 42 42-137 137q-4 4-6.5 10.33-2.5 6.34-2.5 12.67 0 12 9 21t21 9q6 0 11-2t10-7l138-138 42 42-138 138q-5 5-7 11t-2 11q0 14 8 22t22 8Zm.06 60Q442-80 416-104.5t-31-60.62Q351-170 328-193t-28-57q-34-5-56.5-28.5T216-335q-37-5-61-30t-24-60q0-17 6.72-34.05Q144.45-476.1 157-489l224-224 110 110q8 8 17.33 12.5 9.34 4.5 18.67 4.5 13 0 24.5-11.5t11.5-24.65q0-5.85-3.5-13.35T548-651L405-794q-13-13-30-19.5t-34-6.5q-16.67 0-33.33 6.5-16.67 6.5-29.61 19.36L126-642q-14 14-19.5 29.5t-6.5 35q-1 19.5 7.5 38T128-506l-43 43q-20-22-32.5-53T40-579q0-30 11.5-57.5T84-685l151-151q22-22 49.79-32.5 27.8-10.5 57-10.5 29.21 0 56.71 10.5T448-836l18 18 18-18q22-22 49.79-32.5 27.8-10.5 57-10.5 29.21 0 56.71 10.5T697-836l179 179q22 22 33 50.03 11 28.04 11 57 0 28.97-11 56.47T876-444L539-107q-13 13-29.53 20t-34.41 7ZM377-626Z"/></svg>
-                </div>
-                <br>
-                <div style="text-align: center;">
-                <b>Asesoría para Pymes</b>
-                </div>
-                <br>
-                <br>
-                <div style="text-align: center; margin-left: 10px; margin-right: 10px;">
-                  <a href="./service/asesorias.html" class="btn-ver-mas" style="width: 100%;">Ver Más</a>
-                </div>
-                <br>
-              </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="servicioModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3">
+          <div class="modal-header">
+            <h5 class="modal-title" id="servicioTitulo"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-  
-          <br>
-          <div class="col-sm-3 mb-4 mb-sm-0">
-              <div class="card-body">
-                <br>
-                <div style="text-align: center;">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FF6E17"><path d="m499-259 364-363-81-80-363 363 80 80Zm-280 48q-88-6-133.5-40.5T40-349q0-60 51-98t142-46q44-4 65.5-16t21.5-33q0-29-29-44.5T194-609l5-60q89 9 135 41t46 86q0 46-37.5 75T238-433q-69 5-103.5 26T100-349q0 35 30.5 54.5T222-271l-3 60Zm299 18L353-358l398-397q14-14 31.5-13.5T814-755l102 101q14 14 14 32t-14 32L518-193Zm-159 33q-17 4-30-9t-9-30l33-159 165 165-159 33Z"/></svg>
-                </div>
-                <br>
-                <div style="text-align: center;">
-                <b>Diseños Personalizados</b>
-                </div>
-                <br>
-                <br>
-                <div style="text-align: center; margin-left: 10px; margin-right: 10px;">
-                    <a href="./service/diseno.html" class="btn-ver-mas" style="width: 100%;">Ver Más</a>
-                </div>
-                <br>
-              </div>
-          </div>
-  
-  
-          <div class="col-sm-3 mb-4 mb-sm-0">
-              <div class="card-body">
-                <br>
-                <div style="text-align: center;">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FF6E17"><path d="M40-120v-182h60v122h122v60H40Zm697 0v-60h122v-122h60v182H737ZM153-231v-499h80v499h-80Zm121 0v-499h42v499h-42Zm122 0v-499h83v499h-83Zm125 0v-499h121v499H521Zm163 0v-499h42v499h-42Zm83 0v-499h38v499h-38ZM40-658v-182h182v60H100v122H40Zm819 0v-122H737v-60h182v182h-60Z"/></svg>
-                </div>
-                <br>
-                <div style="text-align: center;">
-                <b>Códigos de Barra y Qr</b>
-                </div>
-                <br>
-                <br>
-                <div style="text-align: center; margin-left: 10px; margin-right: 10px;">
-                    <a href="./service/codigos.html" class="btn-ver-mas" style="width: 100%;">Ver Más</a>
-                </div>
-                <br>
-              </div>
-          </div>
-  
-          <br>
-          <div class="col-sm-3 mb-4 mb-sm-0">
-            <div class="card-body">
-                <br>
-                <div style="text-align: center;">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FF6E17"><path d="m436-347 228-228-42-41-183 183-101-101-44 44 142 143Zm44 266q-140-35-230-162.5T160-523v-238l320-120 320 120v238q0 152-90 279.5T480-81Zm0-62q115-38 187.5-143.5T740-523v-196l-260-98-260 98v196q0 131 72.5 236.5T480-143Zm0-337Z"/></svg>
-                </div>
-                <br>
-                <div style="text-align: center;">
-                <b>Registro de Marca</b>
-                </div>
-                <br>
-                <br>
-                <div style="text-align: center; margin-left: 10px; margin-right: 10px;">
-                    <a href="./service/registros.html" class="btn-ver-mas" style="width: 100%;">Ver Más</a>
-                </div>
-                <br>
-            </div>
-          </div>
+          <div class="modal-body" id="servicioContenido"></div>
         </div>
-        <br>
-        <br>
-    </section>
+      </div>
+    </div>
 
-
-       <!--Banner e_commerce-->
-       <section style="background-color: #001532;">
-        <div class="card mb-12" style="max-width: 100%;">
-            <div class="row g-0">
-                <div class="col-md-8" style="background-color: #001532; color: white; text-align: center;">
-                    <br>
-                    <br>
-                    <h2 style="margin-left: 10px; margin-right: 10px;" class="card-title"><b>Conoce Nuestro E-Commerce</b></h2>
-                    <br>
-                    <br>
-                    <h4 style="margin-left: 10px; margin-right: 10px;" class="card-title">
-                        ¡ Una Red de Apoyo a Nuestros Emprendedores !
-                    </h4>
-                    <div class="container">
+    <!--editorial-->
+    <section id="editorial" style="background-color: #EA3A44; padding: 50px 0;">
+    <style>
+        .equipo-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .equipo-header {
+            background-color: #0C68B1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .equipo-texto {
+            text-align: justify;
+            margin-top: 15px;
+        }
+        .equipo-imagen {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+    <div class="container mt-4">
+        <div class="equipo-container">
+            <div class="equipo-header">Programa de Escritores Independientes</div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="static/banners/bible-3417_512.gif" alt="Equipo en cirugía" class="equipo-imagen">
+                </div>
+                <div class="col-md-8">
+                    <p class="equipo-texto">
+                      Te ayudamos con la publicación de tu obra 
+                      en Amazon KDP, ofreciéndote servicios editoriales
+                      de profesionales.
                         <br>
                         <br>
-                        <a href="ecommerce.html" class="btn-ver-mas" style="width: 100%;">
-                            <span class="material-symbols-outlined">
-                                shopping_bag
-                            </span> Ir a la Tienda</a>
-                    </div>
-                </div>
-                <div class="col-md-4" style="background-color: #001532;">
-                    <img src="static/banners/e_commerce.png" class="img-fluid rounded-start" alt="...">
-                   
+                        <ol style="text-align: left; margin-left: 20px;" class="header-text">
+                          <li><b>Edición</b></li>
+                          <li><b>Maquetación</b></li>
+                          <li><b>Corrección Ortotipográfica</b></li>
+                          <li><b>Diseño de Portada</b></li>
+                          <li><b>Publicación en la red de Escritores Digitales con vinculación a redes sociales del Autor (TikTok, Amazon, Wattpad, LinkedIn, Facebook, Instagram, Gmail, WhatsApp).</b></li>
+                          <li><b>Publicación en Amazon</b></li>
+                      </ol>
+                      </p>
+                    <div class="row mt-3" style="text-align: center;">
+                        <div>
+                          <a style="text-decoration: none; text-align: center;" href="service/editorial.html">
+                            <button class="btn-formalizacion">Conoce Nuestros Libros Publicados</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </section>
-
 
     <!--Section footer-->
-    <section style="background-color: black;">
+    <section style="background-color: #0C68B1;">
         <br>
         <br>
         <div class="row g-0" style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
@@ -1343,9 +716,9 @@
             alt="Your Name"
             /> 
             <br>
-            <b style="color: white;">Email: <a style="text-decoration:none;" href="mailto:j.ben.avil.contacto@gmail.com">j.ben.avil.contacto@gmail.com</b></a>
+            <b style="color: white;">Email: <a style="text-decoration:none; color: white;" href="mailto:j.ben.avil.contacto@gmail.com">j.ben.avil.contacto@gmail.com</b></a>
             <br>
-            <b style="color: white;">Teléfono: <a style="text-decoration:none;" href="https://wa.me/56921951687">+569 21951687</b></a>
+            <b style="color: white;">Teléfono: <a style="text-decoration:none; color: white;" href="https://wa.me/56921951687">+569 21951687</b></a>
             <br>
             </div>
 
@@ -1353,16 +726,14 @@
             <br>
             <br>
             <ul style="list-style-type: none;">
-                <li><a style="text-decoration:none; margin-bottom: 10px;" title="tiktok" href="http://tiktok.com/@j.benavil"
-                target="_blank" rel="noopener"><img class ="img_media" loading="lazy" src="./static/social/tiktok.png"
-                alt="TikTok" /> j.benavil</a></li>
+                <li><a style="text-decoration:none; margin-bottom: 10px; color: white;" title="tiktok" href="http://tiktok.com/@j.benavil"
+                target="_blank" rel="noopener"><i class="bi bi-tiktok fs-5"></i> j.benavil</a></li>
                 <br>
-                <li><a style="text-decoration:none; margin-bottom: 10px;" title="Faceboock" href="https://www.facebook.com/profile.php?id=61560665084383" target="_blank" rel="noopener"><img class ="img_media"
-                loading="lazy" src="./static/social/facebook.png" alt="Facebook" /> JBenAvil</a></li>
+                <li><a style="text-decoration:none; margin-bottom: 10px; color: white;" title="Faceboock" href="https://www.facebook.com/profile.php?id=61560665084383" target="_blank" rel="noopener">
+                <i class="bi bi-facebook fs-5"></i>  JBenAvil</a></li>
                 <br>
-                <li><a style="text-decoration:none; margin-bottom: 10px;" title="Instagram" href="https://www.instagram.com/j.benavil"
-                target="_blank" rel="noopener"><img class ="img_media" loading="lazy" src="./static/social/instagram.png"
-                alt="Instagram" /> j.benavil</a></li>
+                <li><a style="text-decoration:none; margin-bottom: 10px; color: white;" title="Instagram" href="https://www.instagram.com/j.benavil"
+                target="_blank" rel="noopener"><i class="bi bi-instagram fs-5"></i> j.benavil</a></li>
                 <br>
             
             <!--
@@ -1394,10 +765,9 @@
             <br>
             <br>
             
-            <b style="color:  #086cf8;" class="footer-text">© Copyright 2024 by J BenAvil Spa.</b>
+            <b style="color: white;" class="footer-text">© Copyright 2024 by J BenAvil Spa.</b>
             </div>
         </div>
-        <br>
         <br>
     </section>
 </section>

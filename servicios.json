@@ -1,0 +1,27 @@
+[
+    {
+      "id": "paginas_web",
+      "nombre": "Páginas Web",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='48px' viewBox='0 -960 960 960' width='48px' fill='white'><path d='M80-680v-80q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v80h-80v-80H160v80H80Zm240 560v-80H160q-33 0-56.5-23.5T80-280v-80h80v80h640v-80h80v80q0 33-23.5 56.5T800-200H640v80H320Zm160-400Zm-288 0 104-104-56-56L80-520l160 160 56-56-104-104Zm576 0L664-416l56 56 160-160-160-160-56 56 104 104Z'/></svg>",
+      "contenido": "Nuestros servicios de desarrollo web incluye todos los servicios que tu negocio necesita para posicionarse en la Red.\n\nIncluye:\n\nPágina Web\n- Posicionamiento SEO\n- Integración de Medios de Pagos\n- Sección de Contacto\n- Galería de Imágenes\n- Galería de Servicios\n- Vinculación a Redes Sociales"
+    },
+    {
+      "id": "catalogo",
+      "nombre": "Catálogo de Producto",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='48px' viewBox='0 -960 960 960' width='48px' fill='white'><path d='M150-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v60h60v60h-60v150h60v60h-60v150h60v60h-60v60q0 24-18 42t-42 18H150Zm0-60h600v-600H150v600Zm60-60h253v-200H210v200Zm283-336h197v-144H493v144ZM210-470h253v-250H210v250Zm283 230h197v-306H493v306ZM150-780v600-600Z'/></svg>",
+      "contenido": "Nuestros servicios diseño de catálogos en PDF te permitirá tener una pieza única de presentación de tus productos, también puedes solicitar, tu catálogo digital en la Landing Page.\n\nIncluye:\n\n Diseño en PDF\n- Diseño Digital\n- Integración de Información Adicional\n- Integración de Información Nutricional\n- Integración de Código Qr\n- Vinculación a Redes Sociales"
+    },
+    {
+      "id": "marketing",
+      "nombre": "Marketing Digital",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='48px' viewBox='0 -960 960 960' width='48px' fill='white'><path d='M468-240q-96-5-162-74t-66-166q0-100 70-170t170-70q97 0 166 66t74 163l-63-20q-11-64-60-106.5T480-660q-75 0-127.5 52.5T300-480q0 67 42.5 116.5T449-303l19 63Zm48 158q-9 1-18 1.5t-18 .5q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 9-.5 18t-1.5 18l-58-18v-18q0-142-99-241t-241-99q-142 0-241 99t-99 241q0 142 99 241t241 99h18l18 58Zm305 22L650-231 600-80 480-480l400 120-151 50 171 171-79 79Z'/></svg>",
+      "contenido": "Te ayudamos con la creación de campañas de marketing digital para aumentar la interacción y tráfico con nuevos clientes.\n\nIncluye:\n\n Diseño de Anuncios\n- Facebook ADS\n- TikTok ADS\n- Banners Publicitarios\n- Integración de Google Analytics\n- Video Marketing"
+    },
+    {
+      "id": "asesoria",
+      "nombre": "Asesoría para Pymes",
+      "svg": "<svg xmlns='http://www.w3.org/2000/svg' height='48px' viewBox='0 -960 960 960' width='48px' fill='white'><path d='M475-140q5 0 11.5-2.5T497-149l337-338q13-13 19.5-29.67Q860-533.33 860-550q0-17-6.5-34T834-614L654-794q-13-13-30-19.5t-34-6.5q-16.67 0-33.33 6.5Q540-807 527-794l-18 18 81 82q13 14 23 32.5t10 40.5q0 38-29.5 67T526-525q-25 0-41.5-7.5t-30.19-21.34L381-627 200-446q-5 5-7 10.53-2 5.52-2 11.84 0 12.63 8.5 21.13 8.5 8.5 21.17 8.5 6.33 0 11.83-3t9.5-7l138-138 42 42-137 137q-5 5-7 11t-2 12q0 12 9 21t21 9q6 0 11.5-2.5t9.5-6.5l138-138 42 42-137 137q-4 4-6.5 10.33-2.5 6.34-2.5 12.67 0 12 9 21t21 9q6 0 11-2t10-7l138-138 42 42-138 138q-5 5-7 11t-2 11q0 14 8 22t22 8Zm.06 60Q442-80 416-104.5t-31-60.62Q351-170 328-193t-28-57q-34-5-56.5-28.5T216-335q-37-5-61-30t-24-60q0-17 6.72-34.05Q144.45-476.1 157-489l224-224 110 110q8 8 17.33 12.5 9.34 4.5 18.67 4.5 13 0 24.5-11.5t11.5-24.65q0-5.85-3.5-13.35T548-651L405-794q-13-13-30-19.5t-34-6.5q-16.67 0-33.33 6.5-16.67 6.5-29.61 19.36L126-642q-14 14-19.5 29.5t-6.5 35q-1 19.5 7.5 38T128-506l-43 43q-20-22-32.5-53T40-579q0-30 11.5-57.5T84-685l151-151q22-22 49.79-32.5 27.8-10.5 57-10.5 29.21 0 56.71 10.5T448-836l18 18 18-18q22-22 49.79-32.5 27.8-10.5 57-10.5 29.21 0 56.71 10.5T697-836l179 179q22 22 33 50.03 11 28.04 11 57 0 28.97-11 56.47T876-444L539-107q-13 13-29.53 20t-34.41 7ZM377-626Z'/></svg>",
+      "contenido": "No te compliques con los procesos de tu negocio, aquí te entregamos la asesoría que necesitas para llevar tu negocio al siguiente nivel.\n\nIncluye:\n\n Asesoría para Pymes\n- Definición de Procesos\n- Análisis F.O.D.A para la toma de decisiones\n- Modelo de Negocios\n- Análisis de Estado\n- Recomendaciones"
+    }
+  ]
+  

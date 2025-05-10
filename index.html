@@ -611,61 +611,77 @@
 
 
 <!--Calculadora-->
-<section id="calculadora" style="background-color: #EA3A44; padding: 50px 0;">
-    <style>
-        .icon-cal {
-              width: 100px;
-              height: 100px;
-              background-color: #0C68B1;
-              border-radius: 50%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin: 0 auto 10px;
-              transition: all 0.3s ease;
-              cursor: pointer;
-            }
-            .icon-cal:hover {
-              background-color: white;
-              transform: scale(1.1);
-            }
-            .icon-cal svg {
-              fill: white;
-              width: 48px;
-              height: 48px;
-            }
-            .icon-cal svg:hover {
-              fill: #0C68B1;
-              width: 48px;
-              height: 48px;
-            }
-    </style>
-      <div class="row">
-        
-        <div class="col-md-6" style="text-align: center; color: white;"> 
-          <br>
-          <h3><b>Calculadora de IVA</b></h3>
-          <br>
-          <a href="./calculadora/calculadora_iva.html"> 
+<section id="calculadora" style="background-color: #EA3A44; padding: 50px 0; width: 100%;">
+  <style>
+    .icon-cal {
+      width: 100px;
+      height: 100px;
+      background-color: #0C68B1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .icon-cal:hover {
+      background-color: white;
+      transform: scale(1.1);
+    }
+
+    .icon-cal svg {
+      fill: white;
+      width: 48px;
+      height: 48px;
+      transition: fill 0.3s ease;
+    }
+
+    .icon-cal:hover svg {
+      fill: #0C68B1;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .col-md-6 {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" style="text-align: center; color: white;">
+        <h3><b>Calculadora de IVA</b></h3>
+        <br>
+        <br>
+        <a href="./calculadora/calculadora_iva.html">
           <div class="icon-cal">
             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M314-228h50v-88h88v-50h-88v-88h-50v88h-88v50h88v88Zm215-35h201v-49H529v49Zm0-107h201v-50H529v50Zm37-163 61-61 61 61 36-36-61-61 61-61-36-36-61 61-61-61-36 36 61 61-61 61 36 36Zm-325-72h196v-50H241v50Zm-61 485q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-600H180v600Zm0-600v600-600Z"/></svg>
           </div>
-          </a>
-          <br>
-        </div> 
-        <div class="col-md-6" style="text-align: center; color: white;"> 
-          <br>
-          <h3><b>Calculadora de Honorarios</b></h3>
-          <br>
-          <a href="./calculadora/calculadora_honorarios.html">
+        </a>
+      </div>
+
+      <div class="col-md-6" style="text-align: center; color: white;">
+        <h3><b>Calculadora de Honorarios</b></h3>
+        <br>
+        <br>
+        <a href="./calculadora/calculadora_honorarios.html">
           <div class="icon-cal">
             <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M490-526h60v-84h84v-60h-84v-84h-60v84h-84v60h84v84Zm-84 156h228v-60H406v60ZM260-160q-24 0-42-18t-18-42v-640q0-24 18-42t42-18h348l232 232v468q0 24-18 42t-42 18H260Zm0-60h520v-442L578-860H260v640ZM140-40q-24 0-42-18t-18-42v-619h60v619h498v60H140Zm120-180v-640 640Z"/></svg>
           </div>
-          </a>
-          <br>
-        </div>
+        </a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!--editorial-->
     <section id="editorial" style="background-color: #EA3A44; padding: 50px 0;">

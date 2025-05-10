@@ -186,275 +186,112 @@
 
   <!-- body -->
 <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section style="margin-left: 10px; margin-right: 10px;">
-        <br>
-        <br>
-        <h3 style="color: #4BBDFE; text-align: center;" class="card-title"><b>CONOCE NUESTROS LIBROS PUBLICADOS</b></h3>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col-sm-4 mb-4 mb-sm-0">
-              <div class="card-body">
-                <div style="text-align: center;">
-                <img style="width: 100%; height: 100%;" 
-                src="../escritores/libros/portada_administración_para_la_vida.jpg" alt="libro">
-                <br>
-                <br>
-                <p style="text-align: center; color: #FF6E17;">Administración para<br>la Vida</p>
-                </div>
-                <div style="text-align: center;">
-                  <a style="width: 100%;" href="../escritores/j.ben.avil.html" class="autor-button">
-                    <i class="fa fa-user-circle"></i> Conoce más el Autor
-                  </a>
-                  <br>
-                  <br>
-                  <a style="width: 100%;" href="https://www.amazon.com/dp/B0CDFSLKYJ" class="amazon-button">
-                    <i class="fab fa-amazon"></i> Comprar en Amazon
-                  </a>
-                  <br>
-                  <br>                     
-                </div>
-              </div>
-          </div>
-
+<br>
+<br>
+<br>
+<br>
+<section style="margin-left: 10px; margin-right: 10px;">
+  <style>
+    body {
+      background-color: #EA3A44;
+    }
+    .calculator {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .result-box {
+      margin-top: 20px;
+    }
+  </style>
+    <div class="calculator">
+        <h2 class="text-center mb-4">Calculadora Honorarios
           <br>
-          <div class="col-sm-4 mb-4 mb-sm-0">
-              <div class="card-body">
-                <div style="text-align: center;">
-                <img style="width: 100%; height: 100%;" 
-                src="../escritores/libros/portda_el_gran_proposito_de_la_vida.jpg" alt="libro">
-                <br>
-                <br>
-                <p style="text-align: center; color: #FF6E17;">El Gran Propósito de<br>la Vida</p>
-                </div>
-                <div style="text-align: center;">
-                  <a style="width: 100%;" href="../escritores/j.ben.avil.html" class="autor-button">
-                    <i class="fa fa-user-circle"></i> Conoce más el Autor
-                  </a>
-                  <br>
-                  <br>
-                  <a style="width: 100%;" href="https://www.amazon.com/dp/B0CDFYL7N6" class="amazon-button">
-                    <i class="fab fa-amazon"></i> Comprar en Amazon
-                  </a>
-                  <br>
-                  <br> 
-                </div>
+          (14,5%)
+        </h2>
+        <form id="ivaForm">
+          <div class="mb-3">
+            <label for="amount" class="form-label">Monto</label>
+            <p>ingresa el monto sin puntos
+              <br>
+              Ejemplo: 1000000</p>
+            <input type="number" class="form-control" id="amount" placeholder="Ingresa el monto" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Tipo de monto</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="amountType" id="neto" value="neto" checked>
+              <label class="form-check-label" for="neto">Neto</label>
+              <p>Corresponde al monto sin IVA</p>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="amountType" id="bruto" value="bruto">
+              <label class="form-check-label" for="bruto">Bruto</label>
+              <P>Corresponde al monto con IVA</P>
             </div>
           </div>
-
-          <div class="col-sm-4 mb-4 mb-sm-0">
-              <div class="card-body">
-                <div style="text-align: center;">
-                <img style="width: 100%; height: 100%;" 
-                src="../escritores/libros/portada_el_gran_espiritu_divino.jpg" alt="libro">
-                <br>
-                <br>
-                <p style="text-align: center; color: #FF6E17;">Él Gran Espíritu<br>Divino</p>
-                </div>
-                <div style="text-align: center;">
-                  <a style="width: 100%;" href="../escritores/j.ben.avil.html" class="autor-button">
-                    <i class="fa fa-user-circle"></i> Conoce más el Autor
-                  </a>
-                  <br>
-                  <br>
-                  <a style="width: 100%;" href="https://www.amazon.com/dp/B0CDFDMZHC" class="amazon-button">
-                    <i class="fab fa-amazon"></i> Comprar en Amazon
-                  </a>
-                  <br>
-                  <br> 
-                </div>
-              </div>
-          </div>
+          <button type="submit" class="btn btn-primary w-100">Calcular</button>
+        </form>
+    
+        <div class="result-box mt-4" id="result" style="display: none;">
+          <h5>Resultado:</h5>
+          <p><strong>Monto Neto:</strong> <span id="netValue"></span> CLP</p>
+          <p><strong>IVA (14,5%):</strong> <span id="ivaValue"></span> CLP</p>
+          <p><strong>Monto Bruto:</strong> <span id="grossValue"></span> CLP</p>
         </div>
-        <br>
-
-        <div class="row">
-          <div class="col-sm-4 mb-4 mb-sm-0">
-            <div class="card-body">
-              <div style="text-align: center;">
-              <img style="width: 100%; height: 100%;" 
-              src="../escritores/libros/portada_poemas_para_la_tierra.jpg" alt="libro">
-              <br>
-              <br>
-              <p style="text-align: center; color: #FF6E17;">Poemas para la<br>Tierra</p>
-              </div>
-              <div style="text-align: center;">
-                <a style="width: 100%;" href="../escritores/j.ben.avil.html" class="autor-button">
-                  <i class="fa fa-user-circle"></i> Conoce más el Autor
-                </a>
-                <br>
-                <br>
-                <a style="width: 100%;" href="https://www.amazon.com/dp/B0CC7BV69B" class="amazon-button">
-                  <i class="fab fa-amazon"></i> Comprar en Amazon
-                </a>
-                <br>
-                <br> 
-              </div>
-            </div>
-          </div>
-
-          <br>
-          <div class="col-sm-4 mb-4 mb-sm-0">
-              <div class="card-body">
-                <div style="text-align: center;">
-                <img style="width: 100%; height: 100%;" 
-                src="../escritores/libros/portada_poemas_para_la_muerte.jpg" alt="libro">
-                <br>
-                <br>
-                <p style="text-align: center; color: #FF6E17;">Poemas para<br>la Muerte</p>
-                </div>
-                <div style="text-align: center;">
-                  <a style="width: 100%;" href="../escritores/j.ben.avil.html" class="autor-button">
-                    <i class="fa fa-user-circle"></i> Conoce más el Autor
-                  </a>
-                  <br>
-                  <br>
-                  <a style="width: 100%;" href="https://www.amazon.com/dp/B0DQHD1MC3" class="amazon-button">
-                    <i class="fab fa-amazon"></i> Comprar en Amazon
-                  </a>
-                  <br>
-                  <br> 
-                </div>
-            </div>
-          </div>
-          
-          <br>
-          <div class="col-sm-4 mb-4 mb-sm-0">
-              <div class="card-body">
-                <div style="text-align: center;">
-                <img style="width: 100%; height: 100%;" 
-                src="../escritores/libros/portada_poemas_para_el_alma.jpg" alt="libro">
-                <br>
-                <br>
-                <p style="text-align: center; color: #FF6E17;">Poemas para<br>el Alma</p>
-                </div>
-                <div style="text-align: center;">
-                  <a style="width: 100%;" href="../escritores/j.ben.avil.html" class="autor-button">
-                    <i class="fa fa-user-circle"></i> Conoce más el Autor
-                  </a>
-                  <br>
-                  <br>
-                  <a style="width: 100%;" href="https://www.amazon.com/dp/B0DRVPF8R7" class="amazon-button">
-                    <i class="fab fa-amazon"></i> Comprar en Amazon
-                  </a>
-                  <br>
-                  <br> 
-                </div>
-              </div>
-          </div>
-        </div>
-        <br>
-
-        <div class="row">
-          <div class="col-sm-4 mb-4 mb-sm-0">
-            <div class="card-body">
-              <div style="text-align: center;">
-              <img style="width: 100%; height: 100%;" 
-              src="../escritores/libros/portada_como_si_fueramos_novios.jpg" alt="libro">
-              <br>
-              <br>
-              <p style="text-align: center; color: #FF6E17;">Como si Fuéramos<br> Novios I</p>
-              </div>
-              <div style="text-align: center;">
-                <a style="width: 100%;" href="../escritores/oswaldo_sanchez_arreaza.html" class="autor-button">
-                  <i class="fa fa-user-circle"></i> Conoce más el Autor
-                </a>
-                <br>
-                <br>
-                <a style="width: 100%;" href="https://www.amazon.com/dp/B0DHP5SN38" class="amazon-button">
-                  <i class="fab fa-amazon"></i> Comprar en Amazon
-                </a>
-                <br>
-                <br> 
-              </div>
-            </div>
-          </div>
-
-          <br>
-          <div class="col-sm-4 mb-4 mb-sm-0">
-            <div class="card-body">
-              <div style="text-align: center;">
-              <img style="width: 100%; height: 100%;" 
-              src="../escritores/libros/portada_como_si_fueramos_novios_2.jpg" alt="libro">
-              <br>
-              <br>
-              <p style="text-align: center; color: #FF6E17;">Como si Fuéramos<br>Novios II</p>
-              </div>
-              <div style="text-align: center;">
-                <a style="width: 100%;" href="../escritores/oswaldo_sanchez_arreaza.html" class="autor-button">
-                  <i class="fa fa-user-circle"></i> Conoce más el Autor
-                </a>
-                <br>
-                <br>
-                <a style="width: 100%;" href="https://www.amazon.com/dp/B0DPQDMBHR" class="amazon-button">
-                  <i class="fab fa-amazon"></i> Comprar en Amazon
-                </a>
-                <br>
-                <br> 
-              </div>
-            </div>
-          </div>
-
-          <br>
-          <div class="col-sm-4 mb-4 mb-sm-0">
-            <div class="card-body">
-              <div style="text-align: center;">
-              <img style="width: 100%; height: 100%;" 
-              src="../escritores/libros/portada_la_filosofia_del_yo_con_dios.jpg" alt="libro">
-              <br>
-              <br>
-              <p style="text-align: center; color: #FF6E17;">La Filpsofía del<br>Yo con Dios</p>
-              </div>
-              <div style="text-align: center;">
-                <a style="width: 100%;" href="../escritores/oswaldo_sanchez_arreaza.html" class="autor-button">
-                  <i class="fa fa-user-circle"></i> Conoce más el Autor
-                </a>
-                <br>
-                <br>
-                <a style="width: 100%;" href="https://www.amazon.com/dp/B0DPQH8DL9" class="amazon-button">
-                  <i class="fab fa-amazon"></i> Comprar en Amazon
-                </a>
-                <br>
-                <br> 
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <br>
-        <div class="row"></div>
-          <div class="col-sm-4 mb-4 mb-sm-0">
-            <div class="card-body">
-              <div style="text-align: center;">
-              <img style="width: 100%; height: 100%;" 
-              src="../escritores/libros/portada_poemario_multicolor.jpg" alt="libro">
-              <br>
-              <br>
-              <p style="text-align: center; color: #FF6E17;">Poemario<br>Multicolor</p>
-              </div>
-              <div style="text-align: center;">
-                <a style="width: 100%;" href="../escritores/daily_herbello_perez.html" class="autor-button">
-                  <i class="fa fa-user-circle"></i> Conoce más el Autor
-                </a>
-                <br>
-                <br>
-                <a style="width: 100%;" href="https://www.amazon.com/dp/B0DF7ZPJ5L" class="amazon-button">
-                  <i class="fab fa-amazon"></i> Comprar en Amazon
-                </a>
-                <br>
-                <br>                    
-              </div>
-            </div>  
-          </div>
-        </div>
-        <br>
-    </section>
-  </div>
-  <br>
+      </div>
+    
+      <script>
+        document.getElementById('ivaForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+      
+          const amountInput = document.getElementById('amount');
+          const amount = parseFloat(amountInput.value.replace(',', '.')); // permite ingresar con coma
+          const type = document.querySelector('input[name="amountType"]:checked').value;
+          const result = document.getElementById('result');
+          const netSpan = document.getElementById('netValue');
+          const ivaSpan = document.getElementById('ivaValue');
+          const grossSpan = document.getElementById('grossValue');
+      
+          if (isNaN(amount) || amount <= 0) {
+            alert("Por favor, ingresa un monto válido mayor a cero.");
+            result.style.display = 'none';
+            return;
+          }
+      
+          let neto, retencion, bruto;
+    
+            if (type === 'neto') {
+            bruto = amount / 0.855;
+            retencion = bruto - amount;
+            neto = amount;
+            } else {
+            neto = amount * 0.855;
+            retencion = amount - neto;
+            bruto = amount;
+            }
+    
+      
+          // Mostrar los resultados formateados en pesos chilenos
+          netSpan.textContent = neto.toLocaleString('es-CL', {
+            style: 'currency',
+            currency: 'CLP',
+          });
+          ivaSpan.textContent = retencion.toLocaleString('es-CL', {
+            style: 'currency',
+            currency: 'CLP',
+            });
+          grossSpan.textContent = bruto.toLocaleString('es-CL', {
+            style: 'currency',
+            currency: 'CLP',
+          });
+      
+          result.style.display = 'block';
+        });
+      </script>
 </section>
 
  
@@ -530,8 +367,4 @@
 </section>
 </body>
 </html>
-
-
-
-
 
